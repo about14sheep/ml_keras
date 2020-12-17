@@ -6,7 +6,9 @@ loss accuracy = 28%
 
 uncomment line 47 to see array of prediction confidence
 
-uncomment line 48 to see accuracy results (first value is loss, second is validation)
+terminal prints accuracy results (first value is loss, second is validation) at the very end
+
+matplotlib saves accuracy graphs in plots directory
 
 sequential model with 3 layers of vector shape
 
