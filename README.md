@@ -1,0 +1,1 @@
+My studies on building machine learning models using the keras framework. Mostly follow along work from the book 'Deep Learning with Python'
