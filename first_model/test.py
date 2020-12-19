@@ -29,7 +29,9 @@ partial_y_train = y_train[10000:]
 
 model = models.Sequential()
 model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
+model.add(layers.Dropout(0.5))
 model.add(layers.Dense(16, activation='relu'))
+model.add(layers.Dropout(0.5))
 model.add(layers.Dense(1, activation='sigmoid'))
 
 model.compile(optimizer='rmsprop',
@@ -39,7 +41,7 @@ model.compile(optimizer='rmsprop',
 
 history = model.fit(partial_x_train,
                     partial_y_train,
-                    epochs=4,
+                    epochs=20,
                     batch_size=512,
                     validation_data=(x_val, y_val))
 
@@ -63,7 +65,7 @@ plt.xlabel('epochs')
 plt.ylabel('Loss')
 plt.legend()
 
-plt.savefig('plots/tv_graph_loss.png')
+plt.savefig('plots/tv_graph_loss_dropout_regularized.png')
 
 plt.clf()
 
@@ -74,4 +76,4 @@ plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
 
-plt.savefig('plots/tv_graph_acc.png')
+plt.savefig('plots/tv_graph_acc_dropout_regularized.png')
