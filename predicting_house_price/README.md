@@ -3,7 +3,7 @@ This model predicts the price of houses off the boston housing price training da
 
 In stead of a classification style model, we use scalar regression to predict a single continuous value
 
-Because the concept of accuracy doesnt apply to regression style models: I implement the k-fold validation process to validate the network while adjusting its parameters. Essentialy this splits the model into 3-4 parts and takes the average validation between them. This method is used when you have a low amount of training data
+Because the concept of accuracy doesnt apply to regression style models: I implement the k-fold validation process to validate the network while adjusting its parameters. Essentialy this splits the data into 3-4 parts, training a model off them seperatly, then takes the average validation between them. This method is used when you have a low amount of training data
 
 matplotlib saves accuracy graphs in plots directory
 
