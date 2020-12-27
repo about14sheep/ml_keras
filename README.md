@@ -4,4 +4,4 @@ My studies on building machine learning models using the keras framework. Mostly
 
 <h3>Models</h3>
 
-each model will have its own readme with graphs, generated during testing with matplotlib, and a basic overview of bigger take-aways for building the model the way I did
+most models will have their own readme with graphs, generated during testing with matplotlib, and a basic overview of bigger take-aways for building the model the way I did.
